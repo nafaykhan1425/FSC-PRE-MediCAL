@@ -1,0 +1,77 @@
+# 📚 FSc Pre-Medical KP Textbook Library
+
+A Streamlit app to read and download Khyber Pakhtunkhwa (KP) Textbook Board
+books for **FSc Pre-Medical**:
+
+| Year     | Subjects                                 |
+|----------|------------------------------------------|
+| 1st Year | Biology, Physics, Chemistry, English     |
+| 2nd Year | Biology, Physics, Chemistry, English     |
+
+## Project structure
+
+```
+fsc-kp-books/
+├── app.py              # main Streamlit app
+├── books.json          # catalog of all 8 books
+├── requirements.txt    # dependencies
+├── books/              # put your PDF files here (create this folder)
+├── .streamlit/
+│   └── config.toml     # theme
+├── .gitignore
+└── README.md
+```
+
+## Run locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Adding books
+
+You can add each book in **either** of two ways (or both):
+
+### Option A: PDF in the repo
+1. Create a folder named `books/`.
+2. Save PDFs with these exact names (or edit `books.json`):
+   - `1st_year_biology.pdf`, `1st_year_physics.pdf`, `1st_year_chemistry.pdf`, `1st_year_english.pdf`
+   - `2nd_year_biology.pdf`, `2nd_year_physics.pdf`, `2nd_year_chemistry.pdf`, `2nd_year_english.pdf`
+
+> GitHub rejects files over 100 MB, and PDFs over ~15 MB won't preview inside
+> the app (download still works). For big books use Option B.
+
+### Option B: Google Drive link (recommended for large files)
+1. Upload the PDF to Google Drive.
+2. Share → **Anyone with the link** → Viewer.
+3. Paste the link into the `"link"` field of that book in `books.json`.
+
+## Deploy with GitHub + Streamlit Community Cloud
+
+1. Create a new repository on GitHub (e.g. `fsc-kp-books`).
+2. Upload all files in this folder (including `books/` if used):
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/fsc-kp-books.git
+   git push -u origin main
+   ```
+3. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+4. Click **Create app** → choose your repo, branch `main`, main file `app.py`.
+5. Click **Deploy**. Every `git push` updates the app automatically.
+
+## Copyright note
+
+Use only official or authorised copies of the KP Textbook Board books. Do not
+publish books you do not have the right to distribute. If the repo is public,
+anyone can download the PDFs inside it, so consider a private repo or Drive links.
+
+## Ideas for later
+
+- Chapter-wise PDFs and search
+- MCQs / past papers section
+- Bookmarks and notes
+- Urdu / English interface
