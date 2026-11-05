@@ -1,0 +1,54 @@
+{
+  "1st Year": {
+    "Biology": {
+      "title": "Biology - 1st Year (Class XI) - KP Textbook Board",
+      "file": "books/1st_year_biology.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "Physics": {
+      "title": "Physics - 1st Year (Class XI) - KP Textbook Board",
+      "file": "books/1st_year_physics.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "Chemistry": {
+      "title": "Chemistry - 1st Year (Class XI) - KP Textbook Board",
+      "file": "books/1st_year_chemistry.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "English": {
+      "title": "English - 1st Year (Class XI) - KP Textbook Board",
+      "file": "books/1st_year_english.pdf",
+      "link": "",
+      "notes": ""
+    }
+  },
+  "2nd Year": {
+    "Biology": {
+      "title": "Biology - 2nd Year (Class XII) - KP Textbook Board",
+      "file": "books/2nd_year_biology.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "Physics": {
+      "title": "Physics - 2nd Year (Class XII) - KP Textbook Board",
+      "file": "books/2nd_year_physics.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "Chemistry": {
+      "title": "Chemistry - 2nd Year (Class XII) - KP Textbook Board",
+      "file": "books/2nd_year_chemistry.pdf",
+      "link": "",
+      "notes": ""
+    },
+    "English": {
+      "title": "English - 2nd Year (Class XII) - KP Textbook Board",
+      "file": "books/2nd_year_english.pdf",
+      "link": "",
+      "notes": ""
+    }
+  }
+}
